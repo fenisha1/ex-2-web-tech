@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blue;" align="center">Company Name</h1>
+    <hr>
+        <div style="text-align:center;">
+            <a href="home.html">Home page</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="application.html">Application form</a>
+        </div>
+    <hr>
+    <form action="server.php" method="post">
+        <fieldset>
+            <legend align="center">Application Form</legend>
+            <table align="center">
+                <tr>
+                    <td style="color:blue;">Name : </td>
+                    <td><input type='text' placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Application Number : </td>
+                    <td><input type='text' placeholder="KU2020CSE1001" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Password : </td>
+                    <td><input type='pass' placeholder="*******" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Date of Birth : </td>
+                    <td><input type='date' placeholder="dd/mm/yy" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Age : </td>
+                    <td><input type='number' required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Mobile Number : </td>
+                    <td><input type='tel' placeholder="Enter mobile number" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Email : </td>
+                    <td><input type='email' placeholder="Enter email id" required></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Gender : </td>
+                    <td><input type="radio" id="male" name="gender" value="MALE">
+                        <label for="male">MALE</label>
+                        <input type="radio" id="female" name="gender" value="FEMALE">
+                        <label for="female">FEMALE</label></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Address : </td>
+                    <td><textarea id="address" name="address" rows="10" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Languages known : </td>
+                    <td><input type="checkbox" id="language1" name="language1" value="tamil">
+                        <label for="language1"> Tamil</label>
+                        <input type="checkbox" id="language2" name="language2" value="english">
+                        <label for="language2"> English</label>
+                        <input type="checkbox" id="language3" name="language3" value="malayalam">
+                        <label for="language3"> Malayalam</label>
+                        <input type="checkbox" id="language4" name="language4" value="telugu">
+                        <label for="language4"> Telugu</label>
+                        <input type="checkbox" id="language5" name="language5" value="hindi">
+                        <label for="language5"> Hindi</label></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Select your course : </td>
+                    <td><label for="Course">Choose a course:</label>
+                        <select name="course" id="course">
+                          <option value="B.tech Computer science and engineering">B.tech Computer science and engineering</option>
+                          <option value="B.tech Computer engineering">B.tech Computer engineering</option>
+                          <option value="B.tech Data science">B.tech Data science</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">Upload your photo : </td>
+                    <td><label for="myfile">Choose file:</label>
+                        <input type="file" id="myfile" name="myfile"></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="file">Downloading progress:</label>
+                    <progress id="file" value="50" max="100"> 50% </progress></td>
+                </tr>
+                <tr>
+                    <td style="color:blue;">SUBMIT </td>
+                    <td><input type='submit' required></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
